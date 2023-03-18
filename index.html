@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Weather App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style/style.css">
+      <script type="text/javascript" src="js/en.js" charset="utf-8"></script>
+      <script src="js/script.js" charset="utf-8"></script>
+   </head>
+   <body>
+      <header>
+         <h2 id="pageHeading">Weather App ⛅</h2>
+      </header>
+      <div id="main">
+         
+         <video autoplay loop muted>
+            <source id="videoSource" src="images/snow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+
+         <div class="text-overlay">
+
+            <div id="searchPane">
+               <input type="text" id="searchBox" value="london canada"></input><br>
+               <button id="searchBtn">Get Weather!</button>
+            </div>
+            
+            <div id="weatherInfoContainer">
+               <h3 id="formattedAddress"></h3>
+               <div id="temperature">
+               	  <img id="weatherIcon" src=""></img>
+                  <p id="weatherWind"></p>
+                  <p id="weatherTemp"></p>
+                  <p id=""></p>
+               </div>
+               
+               <div id="cityInfo">
+               </div>
+            
+            </div>
+         
+         </div>
+      
+      </div>
+      <footer id="footerDiv">
+         <a href="https://www.linkedin.com/in/bobin13">
+            <p id="footer">Api provided by OpenWeather.</p>
+         </a>
+         <a href="index_pb.html">Punjabi</a>
+      </footer>
+   </body>
+</html>
